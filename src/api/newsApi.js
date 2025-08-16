@@ -1,4 +1,5 @@
 const API_URL = "https://api.thenewsapi.com/v1/news/top?locale=us";
+
 const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
 
 export const fetchNews = async (query = "", category = "") => {
