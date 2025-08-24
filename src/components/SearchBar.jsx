@@ -15,7 +15,8 @@ export default function SearchBar({ onSearch }) {
         value={term}
         onChange={(e) => setTerm(e.target.value)}
         placeholder="Search news..."
-        className="flex-1 p-2 border rounded-lg"
+        className="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400
+             bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 border-gray-300 dark:border-gray-600"
       />
       <button
         type="submit"
