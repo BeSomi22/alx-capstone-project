@@ -1,8 +1,15 @@
 import { useLocation, Link } from "react-router-dom";
+import Navbar from "../layouts/Navbar";
+import { useEffect } from "react";
 
 export default function ArticleDetails() {
   const { state } = useLocation();
   const article = state?.article;
+
+  // Scroll to top when this component loads
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!article)
     return (
@@ -15,6 +22,7 @@ export default function ArticleDetails() {
 
   return (
     <div className="max-w-6xl mx-auto p-6">
+      {/* <Navbar /> */}
       {/* Back button */}
       <Link
         to="/"

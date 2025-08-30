@@ -1,12 +1,46 @@
-# React + Vite
+# News App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **News Application** that allows users to stay updated with the latest headlines from different categories using a news API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- ✅ Fetches live news articles from an API
+- ✅ Displays articles with **title, description, and image**
+- ✅ Search functionality for finding specific topics
+- ✅ Organized categories such as Technology, Sports, and Health
+- ✅ Responsive UI for desktop and mobile
+- ⚠️ Known issue: sometimes not all articles load or some images may be missing
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Demo
+
+[Live Demo Link](#)
+
+---
+
+## Tech Stack
+
+- **React** (Frontend framework)
+- **TailwindCSS** (Styling)
+- **News API** (Data source)
+
+---
+
+## Installation & Setup
+
+1. Clone the repo:
+
+   ```bash
+   git clone https://github.com/BeSomi22/alx-capstone-project.git
+
+   cd news-app
+
+   npm install
+
+   VITE_NEWS_API_KEY=your_api_key_here
+
+   npm run dev
+   ```
